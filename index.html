@@ -16,13 +16,13 @@
             <fieldset id="survey-form">
                 <legend>Informacje osobiste</legend>
                 <label for="name">Imię:</label>
-                <input type="text" id="name" placeholder="Wpisz tutaj swoje imię" required>
+                <input type="text" id="name" placeholder="Wpisz tutaj swoje imię." required>
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Wpisz tutaj swój email" pattern="@gmail.com" required>
+                <input type="email" id="email" placeholder="Wpisz tutaj swój email." pattern="@gmail.com" required>
 
                 <label for="age">Wiek:</label>
-                <input type="number" id="number" placeholder="Wpisz tutaj swój wiek" min="3" max="100">
+                <input type="number" id="number" placeholder="Wpisz tutaj swój wiek." min="3" max="100">
                 <div class="alert">
                     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                     Twój wiek musi wynosić od 3 do 100 lat.
@@ -63,6 +63,10 @@
                     <input type="radio" name="uczen" id="uczen" value="uczen">
                     <label for="uczen">Uczeń</label><br>
                 </fieldset>
+
+                <label for="comment">Dodatkowy komentaż:</label>
+                <textarea id="comment" rows="3" cols="26" placeholder="Wpisz tutaj swoją suggestie."></textarea>
+                <button type="submit">Wyślij</button>
             </fieldset>
         </form>
     </main>
