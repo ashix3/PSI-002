@@ -7,23 +7,27 @@
 </head>
 <body>
     <header>
-        <h1>Formulaż Opinii o Hotelu</h1>
-        <p>Dziękujemy za pobyt u nas. Prosimi o opinie na temat twojego ostatniego pobytu.</p>
+        <h1 id="title">Formulaż Ankiety Opinii</h1>
+        <p id="description">Dziękujemy za pobyt u nas. Prosimi o opinie na temat twojego ostatniego pobytu.</p>
     </header>
 
     <main>
         <form action="https://hotel-feedback.freecodecamp.org" method="POST">
-            <fieldset>
+            <fieldset id="survey-form">
                 <legend>Informacje osobiste</legend>
-                <label for="full-name">Imię i nazwisko (Wymagane):</label>
-                <input type="text" id="full-name" name="name" placeholder="np. Jan Kowalski" required>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" placeholder="Wpisz tutaj swoje imię" required>
                 
-                <label for="email">Adres email (wymagane)</label>
-                <input type="email" name="email" id="email" placeholder="jankowalski@gmail.com" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Wpisz tutaj swój email" pattern="@gmail.com" required>
 
-                <label for="age">Wiek (opcjonalne)</label>
-                <input type="number" name="age" id="age" min="2" max="112">
-
+                <label for="age">Wiek:</label>
+                <input type="number" id="number" placeholder="Wpisz tutaj swój wiek" min="3" max="100">
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    Twój wiek musi wynosić od 3 do 100 lat.
+                </div>
+                
                 <fieldset>
                     <legend>Czy to była twoja pierwsza wizyta w naszym hotelu?</legend>
                     <label for="yes-option">Tak</label>
