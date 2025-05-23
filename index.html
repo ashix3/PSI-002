@@ -7,12 +7,12 @@
 </head>
 <body>
     <header>
-        <h1 id="title">Formulaż Ankiety Opinii</h1>
+        <h1 id="title">Formulaż Ankiety Opinii ZSP9</h1>
         <p id="description">Dziękujemy za pobyt u nas. Prosimi o opinie na temat twojego ostatniego pobytu.</p>
     </header>
 
     <main>
-        <form action="https://hotel-feedback.freecodecamp.org" method="POST">
+        <form action="https://zsp9.pl/" method="POST">
             <fieldset id="survey-form">
                 <legend>Informacje osobiste</legend>
                 <label for="name">Imię:</label>
@@ -29,45 +29,39 @@
                 </div>
                 
                 <fieldset>
-                    <legend>Czy to była twoja pierwsza wizyta w naszym hotelu?</legend>
-                    <label for="yes-option">Tak</label>
-                    <input type="radio" name="hotel-stay" id="yes-option">
-                    <label for="no-option">Nie</label>
-                    <input type="radio" name="hotel-stay" id="no-option">
+                    <label>Jaki kierunek zawodu cię interesuje?</label>
+                    <select name="zawud" id="zawud">
+                        <option value="prog-option">Technik Pogramista</option>
+                        <option value="inf-option">Technik Informatyk</option>
+                        <option value="mech-option">Technik Mechanik</option>
+                        <option value="metr-option">Technik Mechatronik</option>
+                        <option value="auto-option">Technik Automatyk</option>
+                        <option value="elik-option">Technik Elektronik</option>
+                        <option value="elyk-option">Technik Elektryk</option>
+                        <option value="rena-option">Technik Realizacji Nagrań</option>
+                    </select>
                 </fieldset>
+
                 <fieldset>
-                    <legend>Dlaczego zdecydowałeś się zatrzymać w naszym hotelu?</legend>
+                    <legend>Z kąd dowiedziałeś się o naszej szkole?</legend>
                     <label for="ads">Reklamy w mediach społecznościowych</label>
-                    <input type="checkbox" name="ads" id="ads" value="ads">
+                    <input type="checkbox" id="ads" value="ads">
                     <label for="recommendations">Osobista rekomendacja</label>
-                    <input type="checkbox" name="recommendations" id="recommendations" value="recommendations">
+                    <input type="checkbox" id="recommendations" value="recommendations">
                     <label for="location">Lokalizacja</label>
-                    <input type="checkbox" name="location" id="location" value="location">
+                    <input type="checkbox" id="location" value="location">
                     <label for="reputation">Reputacja</label>
-                    <input type="checkbox" name="reputation" id="reputation" value="reputation" checked>
+                    <input type="checkbox" id="reputation" value="reputation" checked>
+                    <label for="location">Inne</label>
+                    <input type="checkbox" id="other" value="other">
                 </fieldset>
+
                 <fieldset>
-                    <legend>Oceny</legend>
-                    <label for="service">Jaka była obsługa?</label>
-                    <select name="service" id="service">
-                        <option value="poor">Słaba</option>
-                        <option value="satisfactory">Zadowalająca</option>
-                        <option value="good">Dobra</option>
-                        <option value="very-good">Bardzo dobra</option>
-                        <option value="excellent" selected>Doskonała</option>
-                    </select>
-                    <label for="food">Jakie było jedzenie?</label>
-                    <select name="food" id="food">
-                        <option value="poor">Słabe</option>
-                        <option value="satisfactory">Zadowalające</option>
-                        <option value="good">Dobre</option>
-                        <option value="very-good">Bardzo dobre</option>
-                        <option value="excellent" selected>Doskonałe</option>
-                    </select>
-                        <label for="comments">Inne uwagi?</label>
-                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-                        <button type="submit">Wyślij</button>
-                    </select>
+                    <legend>Jesteś uczniem, czy rodzicem?</legend>
+                    <input type="radio" name="rodzic" id="rodzic" value="rodzic">
+                    <label for="rodzic">Rodzic</label><br>
+                    <input type="radio" name="uczen" id="uczen" value="uczen">
+                    <label for="uczen">Uczeń</label><br>
                 </fieldset>
             </fieldset>
         </form>
